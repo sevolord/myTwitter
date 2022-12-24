@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    /* Add some styling for the form and input fields */
+    body {
+      background-color: lightblue;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    input {
+      margin: 10px 0;
+      width: 100%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="/register" method="post">
+    <label for="login">Регистрация на сайте</label>
+    <label for="login">Логин:</label>
+    <input type="text" id="login" name="login" required>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required minlength="6">
+    <input type="submit" value="Регистрация">
+    <a href="/login.html"> <input type="button" value="Уже зарегестрирован" /> </a>
+  </form>
+</body>
+</html>
